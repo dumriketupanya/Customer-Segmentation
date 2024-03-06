@@ -362,6 +362,7 @@ Visualize each segment individually for comparison.
 <p align="center">
   <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/segmentation_sdcurve.png" width="500" />
 </p>
+
 ### Describing segments and Strategic Application
 Here are examples demonstrating the use of descriptor variables to describe each segment and their strategic applications.
 
