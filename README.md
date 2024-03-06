@@ -113,7 +113,11 @@ The questionnaire has a component as a follows.
     # Create a box plot of cleaned data
     boxplot(answer.prep$Amount_p_purchase_baht, horizontal = T, xlab = "Amount of money per purchase (Cleaned)")
 
-//PIC
+<p align="center">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/box%20plot%20of%20uncleaned%20data.png" width="400" />
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/box%20plot%20of%20cleaned%20data.png" width="400" /> 
+</p>
+
 
 
 ###  Descriptive analysis
@@ -126,7 +130,11 @@ The questionnaire has a component as a follows.
     boxplot(answer.prep$Amount_p_purchase_baht, horizontal = TRUE,                      # Create a boxplot
     main = "Overall data", xlab = "Amount of money per purchase")                       
 
-//PIC
+<p align="center">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/boxplot%20-%20amount%20of%20money%20per%20purchase.png" width="400" />
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/histogram%20-%20amount%20of%20money%20per%20purchase.png" width="400" /> 
+</p>
+
 ####
     # Inspect "Buying Frequency"
     summary(answer.prep$Feq.)                                                      
@@ -134,12 +142,20 @@ The questionnaire has a component as a follows.
     xlab = "frequency", main = " Overall data")
     feq.table <- table(answer.prep$Feq.)
     pie(feq.table, main = " Overall data")                                              # Create pie chart
-//PIC
+<p align="center">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/histogram%20-%20buying%20frequency.png" width="400" />
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/pie%20chart%20-%20buying%20frequency.png" width="400" /> 
+</p>
+
 ####
     # Inspect "Influenced emotion"
     # Create probability with maximum 15 emotional pairs   
     emon.table <- table(answer.prep$Influences_Emotion)                              
     pie(emon.table)
-//PIC    
+
+<p align="center">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/pie%20chart%20-%20influenced%20emotion.png" width="400" />
+</p>
+
 
 
