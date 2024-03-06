@@ -14,7 +14,9 @@ To study the purchasing and consumption behaviors related to desserts. The surve
 
 Market segmentation analysis has a flow diagram as follows.
 
-![Market Segmentation Analysis Process](https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/Market%20Segmentation%20Analysis%20Process.jpg)
+<div style="text-align:center;">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/Market%20Segmentation%20Analysis%20Process.jpg" alt="Market Segmentation Analysis Process" />
+</div>
 
 We chose the commonsense segmentation method because it required less capital, faster, and less complexity.
 
@@ -102,19 +104,16 @@ The questionnaire has a component as a follows.
     upper.adj <- IQR(answer.gen$Amount_p_purchase_baht) + qua.3
 
     # Create a box plot of overall data
-    boxplot(answer.gen$Amount_p_purchase_baht, horizontal = T, xlab = "Amount per purchase") 
+    boxplot(answer.gen$Amount_p_purchase_baht, horizontal = T, xlab = "Amount per purchase (Uncleaned)") 
 
 #### remove outliers, then create cleaned data table.
     answer.prep <- answer.gen[answer.gen$Amount_p_purchase_baht <= upper.adj,]  # Remove outliers
     summary(answer.prep$Amount_p_purchase_baht)                                 # Summary statistics of the 'Amount_p_purchase_baht' variable
     
     # Create a box plot of cleaned data
-    boxplot(answer.prep$Amount_p_purchase_baht, horizontal = T, xlab = "Amount of money per purchase")
+    boxplot(answer.prep$Amount_p_purchase_baht, horizontal = T, xlab = "Amount of money per purchase (Cleaned)")
 
-<p float="left">
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/box%20plot%20of%20uncleaned%20data.png" width="400" />
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/box%20plot%20of%20cleaned%20data.png" width="400" /> 
-</p>
+//PIC
 
 
 ###  Descriptive analysis
