@@ -326,7 +326,7 @@ Visualize each segment individually for comparison.
 
 
 <p align="center">
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/segmentation_histogram.png" width="400" />
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/segmentation_histogram.png" width="500" />
 </p>
 
 #### Box plot
@@ -336,12 +336,20 @@ Visualize each segment individually for comparison.
     boxplot(group.feq.6.5$Amount_p_purchase_baht, horizontal = TRUE,  main = "4 to 5 times per week")
     boxplot(group.feq.6.up$Amount_p_purchase_baht, horizontal = TRUE , main = "below 2 times per week")
 
+<p align="center">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/segmentation_boxplot.png" width="500" />
+</p>
+
 #### Pie chart
     par(mfrow = c(2,2))
     pie(summary(as.factor(group.feq.2.down$Amount_p_purchase_baht)), radius = 1, main = "below 2 times per week")
     pie(summary(as.factor(group.feq.4.3$Amount_p_purchase_baht)), radius = 1, main = "4 to 5 times per week")
     pie(summary(as.factor(group.feq.6.5$Amount_p_purchase_baht)), radius = 1, main = "5 to 6 times per week")
     pie(summary(as.factor(group.feq.6.up$Amount_p_purchase_baht)), radius = 1, main = "6 times or more per week")
+
+<p align="center">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/segmentation_piechart.png" width="500" />
+</p>
 
 
 #### Standard normal distribution curve
@@ -351,6 +359,9 @@ Visualize each segment individually for comparison.
     std.nor.curve(group.6.5.amp, "5 to 6 times per week")
     std.nor.curve(group.6.amp, "6 times or more per week")
 
+<p align="center">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/segmentation_sdcurve.png" width="500" />
+</p>
 ### Describing segments and Strategic Application
 Here are examples demonstrating the use of descriptor variables to describe each segment and their strategic applications.
 
