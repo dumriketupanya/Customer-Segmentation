@@ -14,7 +14,7 @@ To study the purchasing and consumption behaviors related to desserts. The surve
 
 Market segmentation analysis has a flow diagram as follows.
 
-// PICTURE
+![Market Segmentation Analysis Process](https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/Market%20Segmentation%20Analysis%20Process.jpg)
 
 We chose the commonsense segmentation method because it required less capital, faster, and less complexity.
 
@@ -111,7 +111,11 @@ The questionnaire has a component as a follows.
     # Create a box plot of cleaned data
     boxplot(answer.prep$Amount_p_purchase_baht, horizontal = T, xlab = "Amount of money per purchase")
 
-// PICtURE (Clean and unclean box plotting)
+<p float="left">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/box%20plot%20of%20uncleaned%20data.png" width="400" />
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/box%20plot%20of%20cleaned%20data.png" width="400" /> 
+</p>
+
 
 ###  Descriptive analysis
 #### Inspect segmentation variable and overall data 
