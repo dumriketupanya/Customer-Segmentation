@@ -91,6 +91,52 @@ The questionnaire has a component as a follows.
     gender.choose <- answer$Gender == "female"      # include "female" only
     answer.gen <- answer[gender.choose,]            # stores the result in a new data frame called 'answer.gen'
 
-#### remove outlier
-
+#### detect outliers in "Amount per purchase (Baht)"
+    library("lattice")                                  # Load the lattice library for plotting graph      
+    summary(answer.gen$Amount_p_purchase_baht)          # Summary statistics of the 'Amount per purchase (Baht)' variable
+    qua <- quantile(answer.gen$Amount_p_purchase_baht)  # Calculate quantiles
+    qua.3 <- qua[4]                                     # Find the 3rd quantile
     
+    # Calculate the upper adjacent value for outlier detection
+    # Upper adjacent value = 3rd quantile + 1.5 * interquartile range
+    upper.adj <- IQR(answer.gen$Amount_p_purchase_baht) + qua.3
+
+    # Create a box plot of overall data
+    boxplot(answer.gen$Amount_p_purchase_baht, horizontal = T, xlab = "Amount per purchase") 
+
+#### remove outliers, then create cleaned data table.
+    answer.prep <- answer.gen[answer.gen$Amount_p_purchase_baht <= upper.adj,]  # Remove outliers
+    summary(answer.prep$Amount_p_purchase_baht)                                 # Summary statistics of the 'Amount_p_purchase_baht' variable
+    
+    # Create a box plot of cleaned data
+    boxplot(answer.prep$Amount_p_purchase_baht, horizontal = T, xlab = "Amount of money per purchase")
+
+// PICtURE (Clean and unclean box plotting)
+
+###  Descriptive analysis
+#### Inspect segmentation variable and overall data 
+
+    # Inspect "Amount per purchase"
+    summary(answer.prep$Amount_p_purchase_baht)                                         # Summary statistics
+    histogram(~ Amount_p_purchase_baht, data = answer.prep, type = "density",           # Create a histogram
+    main = "Overall data", xlab = "Amount of money per purchase")                       
+    boxplot(answer.prep$Amount_p_purchase_baht, horizontal = TRUE,                      # Create a boxplot
+    main = "Overall data", xlab = "Amount of money per purchase")                       
+
+//PIC
+####
+    # Inspect "Buying Frequency"
+    summary(answer.prep$Feq.)                                                      
+    histogram(~ Feq., data = answer.prep, type = "density",
+    xlab = "frequency", main = " Overall data")
+    feq.table <- table(answer.prep$Feq.)
+    pie(feq.table, main = " Overall data")                                              # Create pie chart
+//PIC
+####
+    # Inspect "Influenced emotion"
+    # Create probability with maximum 15 emotional pairs   
+    emon.table <- table(answer.prep$Influences_Emotion)                              
+    pie(emon.table)
+//PIC    
+
+
