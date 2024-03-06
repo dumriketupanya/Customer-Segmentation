@@ -317,13 +317,6 @@ Calling Function to analyzing the data and get the detailed descriptions for eac
 ### Data visualization
 Visualize each segment individually for comparison.
 
-#### Standard normal distribution curve
-    par(mfrow = c(2,2))
-    std.nor.curve(group.2.amp, "below 2 times per week")
-    std.nor.curve(group.4.3.amp, "4 to 5 times per week")
-    std.nor.curve(group.6.5.amp, "5 to 6 times per week")
-    std.nor.curve(group.6.amp, "6 times or more per week")
-
 #### Histogram
     par(mfrow = c(2,2))
     hist(group.feq.2.down$Amount_p_purchase_baht, main = "below 2 times per week", xlab = "amount of money per purchase")
@@ -343,10 +336,18 @@ Visualize each segment individually for comparison.
     pie(summary(as.factor(group.feq.2.down$Amount_p_purchase_baht)), radius = 1, main = "below 2 times per week")
     pie(summary(as.factor(group.feq.4.3$Amount_p_purchase_baht)), radius = 1, main = "4 to 5 times per week")
     pie(summary(as.factor(group.feq.6.5$Amount_p_purchase_baht)), radius = 1, main = "5 to 6 times per week")
-    pie(summary(as.factor(group.feq.6.up
+    pie(summary(as.factor(group.feq.6.up$Amount_p_purchase_baht)), radius = 1, main = "6 times or more per week")
+
+
+#### Standard normal distribution curve
+    par(mfrow = c(2,2))
+    std.nor.curve(group.2.amp, "below 2 times per week")
+    std.nor.curve(group.4.3.amp, "4 to 5 times per week")
+    std.nor.curve(group.6.5.amp, "5 to 6 times per week")
+    std.nor.curve(group.6.amp, "6 times or more per week")
 
 ### Describing segments and Strategic Application
-These are the example for using descriptor variable to describe each segments.
+Here are examples demonstrating the use of descriptor variables to describe each segment and their strategic applications.
 
 #### Influenced channels
 
@@ -367,7 +368,7 @@ Shows that if we want to get a customer group that has the most buying frequency
     # obtained for the most frequent group data.
     data.frame(table(group.feq.6.up$Influences_Emotion))
 
-The data obtained for the most frequent group (6 times or more per week) in the pair of Influences Emotion variable is shown below.
+The data obtained for the most frequent group in the pair of Influences Emotion variable is shown below.
 
 |           Emotion Pair           | Frequency |
 |:--------------------------------:|:---------:|
@@ -384,4 +385,11 @@ The data obtained for the most frequent group (6 times or more per week) in the 
 |              sad, happy          |     12    |
 |          sad, surprised          |     1     |
 
-Same as before, We should mainly focus on using advertising or emotional marketing which can alleviate the disgusted emotion or arouse customers to be more happy.
+Similarly, our focus should primarily be on using advertising or emotional marketing strategies that can mitigate feelings of disgust or create more happiness among customers.
+
+## References
+
+- [1] Dolnicar, S., et al. (2018). Market Segmentation Analysis: Understanding It, Doing It, and Making It Useful. Springer.
+- [2] วุฒิ สุขเจริญ (2016). พฤติกรรมผู้บริโภค (CONSUMER BEHAVIOR).
+
+
