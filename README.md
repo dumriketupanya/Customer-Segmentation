@@ -14,9 +14,9 @@ To study the purchasing and consumption behaviors related to desserts. The surve
 
 Market segmentation analysis has a flow diagram as follows.
 
-<div style="text-align:center;">
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/Market%20Segmentation%20Analysis%20Process.jpg" alt="Market Segmentation Analysis Process" />
-</div>
+<p align="center">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/Market%20Segmentation%20Analysis%20Process.jpg" />
+</p>
 
 We chose the commonsense segmentation method because it required less capital, faster, and less complexity.
 
@@ -131,8 +131,8 @@ The questionnaire has a component as a follows.
     main = "Overall data", xlab = "Amount of money per purchase")                       
 
 <p align="center">
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/boxplot%20-%20amount%20of%20money%20per%20purchase.png" width="400" />
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/histogram%20-%20amount%20of%20money%20per%20purchase.png" width="400" /> 
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/amount%20of%20money%20per%20purchase_histogram.png" width="400" />
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/amount%20of%20money%20per%20purchase_boxplot.png" width="400" /> 
 </p>
 
 ####
@@ -405,8 +405,9 @@ Similarly, our focus should primarily be on using advertising or emotional marke
 
 ## Dive into Data Analysis and Segmentation
 Explore data analysis and segmentation on your own!\
-The raw data is provided in [file name].\
-For more details, check out the summary report [file name].
+The raw data is provided in: [Surveyed Data Excel File](https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Surveyed_data.xlsx)
+\
+For more details, check this: [Customer Segmentation Analysis Report](https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Customer_Segmentation_Analysis_Report.pdf)
 
 
 
