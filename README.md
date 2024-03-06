@@ -324,10 +324,10 @@ Visualize each segment individually for comparison.
     hist(group.feq.6.5$Amount_p_purchase_baht, main = "5 to 6 times per week", xlab = "amount of money per purchase")
     hist(group.feq.6.up$Amount_p_purchase_baht, main = "6 times or more per week", xlab = "amount of money per purchase")
 
-<div style="text-align:center;">
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/segmentation_histogram.png" alt="Segmentation Histogram" />
-</div>
 
+<p align="center">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/segmentation_histogram.png" width="400" />
+</p>
 
 #### Box plot
     par(mfrow = c(2,2))
