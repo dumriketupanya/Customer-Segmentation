@@ -114,8 +114,8 @@ The questionnaire has a component as a follows.
     boxplot(answer.prep$Amount_p_purchase_baht, horizontal = T, xlab = "Amount of money per purchase (Cleaned)")
 
 <p align="center">
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/box%20plot%20of%20uncleaned%20data.png" width="400" />
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/box%20plot%20of%20cleaned%20data.png" width="400" /> 
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/uncleaned%20data_boxplot.png" width="400" />
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/cleaned%20data_boxplot.png" width="400" /> 
 </p>
 
 
@@ -143,8 +143,8 @@ The questionnaire has a component as a follows.
     feq.table <- table(answer.prep$Feq.)
     pie(feq.table, main = " Overall data")                                              # Create pie chart
 <p align="center">
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/histogram%20-%20buying%20frequency.png" width="400" />
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/pie%20chart%20-%20buying%20frequency.png" width="400" /> 
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/buyingfrequency_histogram.png" width="400" />
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/buyingfrequency_piechart.png" width="400" /> 
 </p>
 
 ####
@@ -154,7 +154,7 @@ The questionnaire has a component as a follows.
     pie(emon.table)
 
 <p align="center">
-  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/pie%20chart%20-%20influenced%20emotion.png" width="400" />
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/blob/main/Pictures/influencedemotion_piechart.png" width="400" />
 </p>
 
 
@@ -324,6 +324,11 @@ Visualize each segment individually for comparison.
     hist(group.feq.6.5$Amount_p_purchase_baht, main = "5 to 6 times per week", xlab = "amount of money per purchase")
     hist(group.feq.6.up$Amount_p_purchase_baht, main = "6 times or more per week", xlab = "amount of money per purchase")
 
+<div style="text-align:center;">
+  <img src="https://github.com/dumriketupanya/Customer-Segmentation/raw/main/Pictures/segmentation_histogram.png" alt="Segmentation Histogram" />
+</div>
+
+
 #### Box plot
     par(mfrow = c(2,2))
     boxplot(group.feq.2.down$Amount_p_purchase_baht, horizontal = TRUE, main = "6 times or more per week")
@@ -387,9 +392,20 @@ The data obtained for the most frequent group in the pair of Influences Emotion 
 
 Similarly, our focus should primarily be on using advertising or emotional marketing strategies that can mitigate feelings of disgust or create more happiness among customers.
 
+## Dive into Data Analysis and Segmentation
+Explore data analysis and segmentation on your own!\
+The raw data is provided in [file name].\
+For more details, check out the summary report [file name].
+
+
+
+
+
+
+
 ## References
 
 - [1] Dolnicar, S., et al. (2018). Market Segmentation Analysis: Understanding It, Doing It, and Making It Useful. Springer.
-- [2] วุฒิ สุขเจริญ (2016). พฤติกรรมผู้บริโภค (CONSUMER BEHAVIOR).
+- [2] วุฒิ สุขเจริญ (2016). พฤติกรรมผู้บริโภค (Consumer Behavior).
 
 
