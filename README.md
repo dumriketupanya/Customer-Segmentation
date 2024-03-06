@@ -20,7 +20,7 @@ We chose the commonsense segmentation method because it required less capital, f
 
 We will mainly focus on the details of how to identify the ideal target audience and how to select variables for the data collection process.
 
-#### Specifying the ideal target segment
+### Specifying the ideal target segment
 1. **Knock-out criteria** are considered a "Must have" characteristic and those elements need to show up in the selected customer groups. An important criteria are as follows:
 ####
 | Criteria | Description     | 
@@ -34,7 +34,7 @@ We will mainly focus on the details of how to identify the ideal target audience
 
 2. **Attractiveness criteria** considered a "Should have" characteristic and used to measure the attractiveness of each group. Scores will be given based on how interesting the group is.
 
-## Variables for the data collection process
+### Variables for the data collection process
 This step requires defining the variables for use in the data collection process. There are two types of variables that must be created as follows:
 
 1. **Segmentation variables** are used to divide different groups in the sample data from each other.
@@ -72,3 +72,25 @@ The questionnaire has a component as a follows.
 | The value-expression function | Descriptor variable    | Qualitative    | Nominal scale     | Binary    |
 | Prior experience              | Descriptor variable    | Qualitative    | Nominal scale     | Binary    |
 
+
+## Data Analysis with R
+
+#### import data
+
+    answer <- read.csv('fileName.csv', stringsAsFactors = TRUE)
+
+###  Data Cleaning
+#### inspect data and data table
+
+    dim(answer)         # check the dimenstion of data table
+    colnames(answer)    # check all column name
+    summary(answer)     # skimming through overall details of each data
+
+#### filter data
+
+    gender.choose <- answer$Gender == "female"      # include "female" only
+    answer.gen <- answer[gender.choose,]            # stores the result in a new data frame called 'answer.gen'
+
+#### remove outlier
+
+    
