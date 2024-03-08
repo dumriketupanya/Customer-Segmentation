@@ -7,7 +7,7 @@ In today's business landscape, conducting business by targeting the most suitabl
 
 
 ## Objectives
-This project has the intention to segment targeted customers based on the consumer behavior of customers. Using R language to analyze the data. Subsequencely, select the most suitable segment for starting and penetrating the market for a dessert product, which is a custard pudding. 
+This project has the intention to segment targeted customers based on the consumer behavior of customers. Using R language to analyze the data. Subsequence, select the most suitable segment for starting and penetrating the market for a dessert product, which is a custard pudding. 
 ## Project Scope
 To study the purchasing and consumption behaviors related to desserts. The survey focused on a sample of female undergraduate students in a university. Ultimately, 244 individuals were surveyed. And after the data cleaning process, 203 respondents were included in the analysis.
 ## Market Segmentation Analysis
